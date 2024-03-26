@@ -1,11 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
+import HomePage from "./pages/home-page/HomePage.js";
 
 function App() {
   return (
     <Layout>
-      <Routes></Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </Layout>
   );
 }
