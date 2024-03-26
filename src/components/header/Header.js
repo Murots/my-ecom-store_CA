@@ -10,7 +10,10 @@ function Header() {
         <Link to="/">Home</Link>
         <Link to="/contact">Contact</Link>
       </S.Nav>
-      <CartIcon />
+      <S.StyledLink to="/cart">
+        <span>Cart</span>
+        <CartIcon />
+      </S.StyledLink>
     </S.Container>
   );
 }

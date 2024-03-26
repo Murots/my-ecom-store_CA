@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const ShoppingCartIcon = styled(FiShoppingCart)`
-  font-size: 24px;
+  font-size: 20px;
 `;
 
 export const ItemCount = styled.span`
