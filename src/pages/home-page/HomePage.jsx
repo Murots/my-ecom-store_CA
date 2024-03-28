@@ -4,7 +4,8 @@ import ProductCard from "../../components/product-card/ProductCard";
 import { ProductsGrid } from "./HomePage.styles";
 
 const HomePage = () => {
-  const { data: products, isLoading, isError } = useApi("https://v2.api.noroff.dev/online-shop");
+  const { data, isLoading, isError } = useApi("https://v2.api.noroff.dev/online-shop");
+  const products = data || []; // Default to an empty array if data is null
 
   if (isLoading) {
     return <div>Loading products...</div>;
