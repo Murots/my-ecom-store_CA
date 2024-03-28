@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
  * Custom API hook for fetching data.
  */
 const useApi = (url) => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -12,6 +12,7 @@ const useApi = (url) => {
     const getData = async () => {
       setIsLoading(true);
       setIsError(false);
+
       try {
         const response = await fetch(url);
         const json = await response.json();
@@ -25,7 +26,7 @@ const useApi = (url) => {
       }
     };
 
-    getData();
+    getData(url);
   }, [url]);
 
   return { data, isLoading, isError };
