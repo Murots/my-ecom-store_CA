@@ -1,4 +1,10 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
 
 export const Card = styled.div`
   background: white;
@@ -6,6 +12,7 @@ export const Card = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s;
+
   &:hover {
     transform: scale(1.02);
   }

@@ -6,7 +6,7 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: #e9ecef;
 `;
 
 export const Nav = styled.nav`
