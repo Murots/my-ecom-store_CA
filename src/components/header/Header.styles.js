@@ -26,13 +26,14 @@ export const StyledLink = styled(Link)`
   display: flex;
   gap: 10px;
   background-color: #b8e0d2;
-  padding: 5px 20px 2px 20px;
+  padding: 5px 17px 2px 17px;
   border: 1px solid #6da99f;
   border-radius: 8px;
   text-decoration: none;
   transition: transform 0.2s, background-color 0.2s;
   color: black;
   font-weight: 600;
+  position: relative;
 
   &:hover {
     text-decoration: none;
