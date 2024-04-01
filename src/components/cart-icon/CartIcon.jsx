@@ -1,15 +1,17 @@
 import React from "react";
-import * as S from "./CartIcon.styles";
 // import { Link } from "react-router-dom";
+import useStore from "../../hooks/useStore";
+import * as S from "./CartIcon.styles";
 
-function CartIcon({ itemCount }) {
-  // itemCount should be passed from a global state or context
+const CartIcon = () => {
+  const itemCount = useStore((state) => state.cart.length);
+
   return (
-    <S.Container>
+    <div>
       <S.ShoppingCartIcon />
       {itemCount > 0 && <S.ItemCount>{itemCount}</S.ItemCount>}
-    </S.Container>
+    </div>
   );
-}
+};
 
 export default CartIcon;

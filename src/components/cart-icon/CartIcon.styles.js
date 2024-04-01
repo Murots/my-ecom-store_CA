@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { FiShoppingCart } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
-export const Container = styled.div`
-  position: relative;
-  cursor: pointer;
+export const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 `;
 
 export const ShoppingCartIcon = styled(FiShoppingCart)`
@@ -12,8 +15,8 @@ export const ShoppingCartIcon = styled(FiShoppingCart)`
 
 export const ItemCount = styled.span`
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: -5px;
+  right: -5px;
   background-color: red;
   color: white;
   border-radius: 50%;
