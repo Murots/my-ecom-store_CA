@@ -21,25 +21,35 @@ export const ProductLayout = styled.div`
 export const ProductImageContainer = styled.div`
   flex: 1;
   max-width: 100%;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     max-width: 50%;
+    background-color: #e9ecef;
   }
 `;
 
 export const ProductImage = styled.img`
-  width: auto;
-  max-width: 35vw;
-  max-height: 80vh;
-  border-radius: 8px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    max-height: 80vh;
+    width: auto;
+    margin: auto;
+  }
 `;
 
 export const ProductInfo = styled.div`
   flex: 1;
-  padding: 0 20px;
 
   @media (min-width: 768px) {
     max-width: 50%;
+    padding: 0 20px;
   }
 `;
 
