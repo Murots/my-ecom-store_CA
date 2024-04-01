@@ -1,6 +1,7 @@
 import React from "react";
 import useStore from "../../hooks/useStore";
 import * as S from "./CheckoutPage.styles";
+import { Link } from "react-router-dom";
 
 const CheckoutPage = () => {
   const cart = useStore((state) => state.cart);
@@ -21,7 +22,9 @@ const CheckoutPage = () => {
         <S.TotalAmount>Total: ${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</S.TotalAmount>
         <div>
           <S.Button onClick={clearCart}>Clear cart</S.Button>
-          <S.Button>Checkout</S.Button>
+          <Link to="/success">
+            <S.Button>Checkout</S.Button>
+          </Link>
         </div>
       </S.ConclusionContainer>
     </S.CheckoutContainer>
