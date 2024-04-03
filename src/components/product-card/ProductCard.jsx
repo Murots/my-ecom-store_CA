@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import * as S from "./ProductCard.styles";
 import DiscountInfo from "../discount-info/DiscountInfo";
 
@@ -15,9 +14,7 @@ const ProductCard = ({ product }) => {
           <S.Price>
             <DiscountInfo price={product.price} discountedPrice={product.discountedPrice} showDiscountPercentage={false} />
           </S.Price>
-          <Link to={`/product/${product.id}`}>
-            <S.Button>View Product</S.Button>
-          </Link>
+          <S.Button>View Product</S.Button>
         </S.Info>
       </S.Card>
     </S.StyledLink>

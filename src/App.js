@@ -5,6 +5,7 @@ import HomePage from "./pages/home-page/HomePage.jsx";
 import ProductPage from "./pages/product-page/ProductPage.jsx";
 import CheckoutPage from "./pages/checkout-page/CheckoutPage.jsx";
 import SuccessPage from "./pages/success-page/SuccessPage.jsx";
+import ContactPage from "./pages/contact-page/ContactPage.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="product/:id" element={<ProductPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/success" element={<SuccessPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Layout>
   );
