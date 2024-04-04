@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { buttonStyle } from "../../styles/GlobalStyles";
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
@@ -53,15 +54,5 @@ export const Price = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: #0056b3;
-  }
+  ${buttonStyle}
 `;

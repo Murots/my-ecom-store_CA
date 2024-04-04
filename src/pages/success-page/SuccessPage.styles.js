@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { buttonStyle } from "../../styles/GlobalStyles";
 
 export const SuccessContainer = styled.div`
   display: flex;
@@ -22,15 +23,6 @@ export const SuccessMessage = styled.p`
 `;
 
 export const BackToStoreLink = styled(Link)`
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+  ${buttonStyle}
   text-decoration: none;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: #0056b3;
-  }
 `;

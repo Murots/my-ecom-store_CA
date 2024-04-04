@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { buttonStyle } from "../../styles/GlobalStyles";
 
 export const PageContainer = styled.div`
   display: flex;
@@ -58,16 +59,6 @@ export const ErrorMessage = styled.p`
 `;
 
 export const SubmitButton = styled.button`
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: #0056b3;
-  }
+  ${buttonStyle}
+  font-size: 1rem;
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { buttonStyle } from "../../styles/GlobalStyles";
 
 export const CheckoutContainer = styled.div`
   max-width: 800px;
@@ -28,19 +29,9 @@ export const TotalAmount = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+  ${buttonStyle}
+  font-size: 1rem;
   margin-right: 10px;
-  border-radius: 5px;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: #0056b3;
-  }
 
   &:last-child {
     margin-right: 0;

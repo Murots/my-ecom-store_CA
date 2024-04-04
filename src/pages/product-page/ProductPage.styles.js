@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { buttonStyle } from "../../styles/GlobalStyles";
 
 export const PageContainer = styled.div`
   max-width: 1200px;
@@ -68,18 +69,7 @@ export const ProductDescription = styled.p`
 `;
 
 export const AddToCartButton = styled.button`
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  ${buttonStyle}
   font-size: 1rem;
-  transition: background-color 0.2s ease-in-out;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-
   margin-bottom: 20px;
 `;
