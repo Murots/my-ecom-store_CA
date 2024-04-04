@@ -9,16 +9,18 @@ export const Container = styled.header`
   background-color: #e9ecef;
 `;
 
-export const Nav = styled.nav`
-  a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
+export const Hamburger = styled.div`
+  display: none;
+  cursor: pointer;
 
-    &:hover {
-      text-decoration: underline;
-    }
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const Nav = styled.nav`
+  @media (max-width: 768px) {
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   }
 `;
 
