@@ -1,7 +1,15 @@
 import React, { useEffect } from "react";
 import useStore from "../../hooks/useStore";
-import * as S from "./SuccessPage.styles"; // Make sure the path matches your file structure
+import * as S from "./SuccessPage.styles";
 
+/**
+ * Represents the success page that is displayed after a successful checkout.
+ * This page informs the user that their order has been processed successfully. It also provides a link to return to the homepage, allowing the user to continue shopping. The cart is cleared automatically.
+ *
+ * @module SuccessPage
+ *
+ * @returns {React.Component} Renders the success notification and a link to return to the store homepage.
+ */
 const SuccessPage = () => {
   const clearCart = useStore((state) => state.clearCart);
 

@@ -4,6 +4,17 @@ import CartIcon from "../cart-icon/CartIcon";
 import { RxHamburgerMenu } from "react-icons/rx";
 import NavLinks from "../nav-links/NavLinks";
 
+/**
+ * Header component that provides navigation links and access to the shopping cart.
+ * It includes a responsive hamburger menu for smaller screens that toggles navigation links displayed by the `NavLinks` component.
+ * The `CartIcon` component is used to display and link to the shopping cart.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Header />
+ * )
+ */
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 

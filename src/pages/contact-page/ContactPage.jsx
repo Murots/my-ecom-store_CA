@@ -4,6 +4,15 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import * as S from "./ContactPage.styles";
 
+/**
+ * A React component that renders a contact form with validation using react-hook-form and Yup.
+ * It provides fields for entering full name, subject, email, and a message body. Form fields have validation rules enforced via Yup.
+ * Upon successful submission, the form data is logged to the console and the form is reset.
+ *
+ * @module ContactPage
+ *
+ * @returns {React.Component} The ContactPage component renders a contact form with inputs for user data and validation handling.
+ */
 const contactSchema = yup
   .object({
     fullName: yup.string().required("Full name is required").min(3, "Full name must be at least 3 characters"),
